@@ -1,3 +1,5 @@
 *.pdf
 .ipynb_checkpoints
 __pycache__
+Untitled*
+.DS_Store
