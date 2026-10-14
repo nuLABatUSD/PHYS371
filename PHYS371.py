@@ -14,7 +14,7 @@ def random_walk(steps):
 def chi_square_acceleration(t, x, sigma, v0, a):
   return np.sum((x - (v0*t + 0.5*a*t**2))**2 / sigma**2)
 
-def MC_step(rng, t, x, dx, v, a, prev_chi, dv, da):
+def MCMC_step(rng, t, x, dx, v, a, prev_chi, dv, da):
   v_temp = rng.normal(loc=v, scale=dv)
   a_temp = rng.normal(loc=a, scale=da)
 
