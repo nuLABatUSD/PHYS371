@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import numba as nb
 
 def random_walk(steps):
   if np.isscalar(steps):
